@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <style>
-        body {
-          background-image: url('./index_bg.jpg');
-        }
-        </style>
-</head>
-<body>
-    
-    <h1><a href="./scientific/scientific_calculator.html">Click Here</a>for Scientific Calculator</h1>
-    <h1><a href="#">Click Here</a> for EMI Calculator</h1>
-    <h1><a href="./binary/binary_calculator.html">Click Here</a> for Binary Calculator</h1>
-</body>
+      body {
+        background-image: url("./img/index_bg.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      .grid-container {
+        display: grid;
+        margin-top: 200px;
+        margin-left: 100px;
+        grid-template-columns: 100px;
+        grid-template-rows: 100px 100px 100px;
+      }
+      .button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #04aa6d;
+      }
+
+      .button1:hover {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .button2 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008cba;
+      }
+
+      .button2:hover {
+        background-color: #008cba;
+        color: white;
+      }
+      .button3 {
+      }
+      .button3:hover {
+        background-color: purple;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div><button class="button button1">Scientific</button></div>
+      <div><button class="button button2">Binary</button></div>
+      <div><button class="button button3">EMI</button></div>
+    </div>
+  </body>
 </html>
