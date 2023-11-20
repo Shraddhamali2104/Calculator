@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <title>Loan Calculator</title> 
+  
+    <style> 
+
+body {
+  /* The image used */
+  background-image:url(img/Screenshot\ 2023-11-20\ 111643.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+
+        h1 { 
+            font-size: 35px; 
+        } 
+          
+        h1 { 
+            font-size: 21px; 
+            margin-top: 20px; 
+        } 
+       
+        button{
+           color: aliceblue;
+           background-color:rgb(53, 113, 113);
+           border-color:black;
+           align-items: center;
+           width: 60px;
+           margin-left: 172.5px;
+        }
+
+          
+        .calculator { 
+            width: 450px; 
+            height: 390px; 
+            background-color:rgb(53, 113, 113); 
+            position: absolute; 
+            left: 65%; 
+            top: 50%; 
+            transform: translateX(-50%) translateY(-50%); 
+            padding: 50px 0px 0px 40px; 
+            border-radius: 50px; 
+            color: white; 
+
+        } 
+          
+        input { 
+            padding: 7px; 
+            width: 90%; 
+            margin-top: 7px; 
+        } 
+    </style> 
+</head> 
+  
+<body> 
+    <div class="calculator"> 
+        <h1>Loan Calculator</h1> 
+  
+        <!-- Calling Calculate function defined in app.js -->
+        <p>Amount (₹)     : *
+            <input id="amount" type="number"
+            onchange="Calculate()"> 
+        </p>
+        
+  
+        <p>Interest Rate : *
+            <input id="rate" type="number"
+            onchange="Calculate()"> 
+        </p> 
+  
+        <p>Months to Pay : *
+            <input id="months" type="number"
+            onchange="Calculate()"> 
+        </p>
+        <button type="button">Answer</button> 
+  
+        <h2 id="total"></h2> 
+    </div> 
+  
+    <script src="./EMI.js"></script> 
+</body> 
+  
+</html> 
