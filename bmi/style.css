@@ -1,0 +1,18 @@
+.jumbotron { 
+	width: 60%; 
+	margin: auto; 
+	text-align: center; 
+} 
+
+#output { 
+	border: 2px solid rgb(17, 255, 0); 
+	min-height: 60px; 
+	text-align: right; 
+	font-weight: bold; 
+	font-size: 20px; 
+} 
+
+.btn { 
+	min-width: 120px; 
+	border: 2px solid black; 
+}
