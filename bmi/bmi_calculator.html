@@ -8,7 +8,7 @@
 
 body {
   /* The image used */
-  background-image: url(./img);
+  background-image: url("./img/img/istockphoto-1033389128-1024x1024.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size:100% 100%;
@@ -61,22 +61,22 @@ body {
   
         <!-- Calling Calculate function defined in app.js -->
         <p>Amount (₹)     : *
-            <input id="amount" type="number"
-            onchange="Calculate()"> 
+            <input id="amount" type="number"> 
         </p>
         
   
         <p>Interest Rate : *
-            <input id="rate" type="number"
-            onchange="Calculate()"> 
+            <input id="rate" type="number"> 
         </p> 
   
         <p>Months to Pay : *
-            <input id="months" type="number"
-            onchange="Calculate()"> 
+            <input id="months" type="number"> 
         </p>
-        <button type="button">Answer</button> 
-  
+
+        
+        <button type="button" onclick="Calculate()">Answer</button>
+        
+
         <h2 id="total"></h2> 
     </div> 
   
