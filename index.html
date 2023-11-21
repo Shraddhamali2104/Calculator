@@ -6,27 +6,27 @@
     <title>Calculator</title>
 
     <style>
-      h1{
+      h1 {
         font-style: italic;
-        font: weight 1500px; 
-
+        font: weight 1500px;
       }
-      h3{
-        font-weight:1000 ;
+      h3 {
+        font-weight: 1000;
       }
       body {
         background-image: url("./img/index_bg.jpg");
         background-repeat: no-repeat;
-        background-attachment:fixed;
+        background-attachment: fixed;
         background-size: 100% 100%;
       }
 
       .grid-container {
         display: grid;
-        margin-top: 200px;
-        margin-left: 100px;
-        grid-template-columns: 100px;
-        grid-template-rows: 100px 100px 100px;
+        margin-top:7rem;
+        margin-left: 8rem;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        
       }
 
       .button {
@@ -74,18 +74,17 @@
         background-color: purple;
         color: white;
       }
-
     </style>
   </head>
   <body>
-    <h1>Welcome to Calciworld!</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h3>Please select the required Calculator</h3>
     <div class="grid-container">
+      <div class="title">
+        <h1>Welcome to Calciworld!</h1>
+      </div>
+
+      <div class="title2">
+        <h3>Please select the required Calculator</h3>
+      </div>
       <div>
         <a href="./scientific/scientific_calculator.html">
           <button class="button button1">Scientific</button>
