@@ -18,6 +18,9 @@ function Calculate() {
     // Calculating total payment 
     let total = ((amount / months) + interest).toFixed(2); 
   
+<<<<<<< HEAD
     
+=======
+>>>>>>> 8b8f73b39fe8a61ef75473f9f97129c86e0ca073
     document.querySelector("#total").innerHTML = "EMI : (₹)" + total; 
 }
