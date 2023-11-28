@@ -15,9 +15,23 @@
     <style type="text/css">
 
       .jumbotron {
-        width: 60%;
-        margin: auto;
+        width:60%;
+        left: 50%;
+        top: 50%;
+        /* background-color: coral; */
+        /* margin: auto; */
+        position: absolute;
         text-align: center;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      #myvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background-size: cover;
+              
       }
 
       #output {
@@ -36,6 +50,9 @@
   </head>
 
   <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="../img/dots_-_120172 (Original).mp4" type="video/mp4">
+  </video>
     <div class="container">
       <div class="jumbotron">
         <h1>Binary Calculator</h1>
@@ -54,6 +71,7 @@
                 class="btn btn-danger float-right ml-2"
                 onclick="cls()"
               >
+              
                 AC
               </button>
               <button
@@ -95,6 +113,7 @@
         </div>
       </div>
     </div>
+    
 
     <script type="text/javascript">
       var scr = ""; //declared as global variable
